@@ -7,7 +7,15 @@ paths:
     get:
       description: Relative Resolver Failure
       parameters:
-        $ref: "./hop1.yaml"
+        - in: query
+          name: param
+          required: true
+          description: param for testing
+          schema:
+            type: string
+          examples:
+            EXAMPLE1:
+              value: 1
             
             
 
@@ -17,8 +25,7 @@ paths:
           content:
             application/json:
               examples:
-                EXAMPLE1: 
-                  value: "pewpewpew"
+                $ref: ./hop1.yaml
 
-          description: Break UI xD
+          description: Broken Ref Resolver
 
