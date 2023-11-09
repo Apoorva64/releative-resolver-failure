@@ -1,0 +1,24 @@
+openapi: "3.1.0"
+info:
+  title: Relative Resolver Failure
+  version: 2.0.0
+paths:
+  /v1.0/endpoint:
+    get:
+      description: Relative Resolver Failure
+      parameters:
+        $ref: "./hop1.yaml"
+            
+            
+
+      responses:
+        '200':
+
+          content:
+            application/json:
+              examples:
+                EXAMPLE1: 
+                  value: "pewpewpew"
+
+          description: Break UI xD
+

@@ -1,0 +1,9 @@
+- in: query
+  name: param
+  required: true
+  description: param for testing
+  schema:
+    type: string
+  examples:
+    $ref: "./hop2.yaml"
+    
